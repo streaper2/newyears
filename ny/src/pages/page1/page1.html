@@ -10,6 +10,18 @@
 <ion-content color="secondary" padding>
   <h3>Mon amour</h3>
     <img src="assets/img/emy1.jpg">
+
+    <ion-list>
+    <ion-item *ngFor="let person of people">
+      <ion-avatar item-left>
+        <img src="{{person.picture.thumbnail}}">
+      </ion-avatar>
+      <h2>{{person.name.first}} {{person.name.last}}</h2>
+      <p>{{person.email}}</p>
+    </ion-item>
+  </ion-list>
+
+  
   <p>
    Je ne voulais pas te souhaiter un simple bonne année, je voulais que ca reste un petit peu dans ton coeur, que tu puisses
    revoir ce messages quand tu le souhaites.
