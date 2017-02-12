@@ -1,0 +1,83 @@
+<!--
+  Generated template for the Resolution page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Résolution</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p> il y a beaucoup de résolution a prendre, mais les premiers résolution sont c'elle-ci, et il faudra t'y tenir</p>
+
+<ion-list>
+
+<ion-card>
+<ion-title> Beaucoup de soleil</ion-title>
+ <ion-item color="light">
+   <ion-range min="0" max="100" step="2" color="yellow" [(ngModel)]="brightness">
+     <ion-icon small range-left name="sunny"></ion-icon>
+     <ion-icon range-right name="sunny"></ion-icon>
+   </ion-range>
+ </ion-item>
+</ion-card>
+
+<ion-card>
+<ion-title color="light"> Beaucoup d'amour</ion-title>
+ <ion-item color="light">
+   <ion-range min="0" max="100" step="2"  color="danger" [(ngModel)]="love">
+     <ion-icon small range-left name="heart"></ion-icon>
+     <ion-icon range-right name="heart"></ion-icon>
+   </ion-range>
+ </ion-item>
+</ion-card>
+
+<ion-card>
+<ion-title>Un peu de colère</ion-title>
+  <ion-item color="light">
+   <ion-range min="0" max="100" step="2"  color="danger" [(ngModel)]="colere">
+     <ion-icon small range-left name="logo-freebsd-devil"></ion-icon>
+     <ion-icon range-right name="logo-freebsd-devil"></ion-icon>
+   </ion-range>
+ </ion-item>
+</ion-card>
+
+
+<ion-card>
+<ion-title>Beaucoup d'argent</ion-title>
+  <ion-item color="light">
+   <ion-range min="0" max="100" step="2"  color="green" [(ngModel)]="money">
+     <ion-icon small range-left name="logo-euro"></ion-icon>
+     <ion-icon range-right name="logo-euro"></ion-icon>
+   </ion-range>
+ </ion-item>
+ <p small text-center>Mais pas trop sinon tu seras plus avec moi</p>
+</ion-card>
+
+<ion-card>
+<ion-title>Pas beaucoup de froid</ion-title>
+  <ion-item color="light">
+   <ion-range min="0" max="100" step="2"  color="cold" [(ngModel)]="snow">
+     <ion-icon small range-left name="snow"></ion-icon>
+     <ion-icon range-right name="snow"></ion-icon>
+   </ion-range>
+ </ion-item>
+ <p small text-center>Je serai la pour te rechauffer le cas échéans</p>
+</ion-card>
+
+
+
+ <ion-title>Une belle maison  <ion-icon right name="home"></ion-icon> </ion-title>
+ <ion-title>Des voyages  <ion-icon right name="plane"></ion-icon> </ion-title>
+
+
+</ion-list>
+</ion-content>

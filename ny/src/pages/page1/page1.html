@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button  menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bonne Année 2017</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content color="secondary" padding>
+  <h3>Mon amour</h3>
+    <img src="assets/img/emy1.jpg">
+  <p>
+   Je ne voulais pas te souhaiter un simple bonne année, je voulais que ca reste un petit peu dans ton coeur, que tu puisses
+   revoir ce messages quand tu le souhaites.
+  </p>
+
+  <p>
+   Tous d'abords je te souhaite une bonne année plein de bonne chose de l'amour et moins de tracas je t'invite a cliquer sur le push love bouton en bas
+  </p>
+  
+
+<button ion-button [navPush]="PushlovePage" [navParams]="params"(click)="goToLove()">Push Love</button>
+</ion-content>
