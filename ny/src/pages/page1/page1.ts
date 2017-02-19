@@ -14,13 +14,13 @@ import 'rxjs/Rx';
   providers: [MeteoService]
 })
 export class Page1 {
-public people: any;
+public meteos: any;
 
   constructor(public navCtrl: NavController, public params: NavParams,public meteoService: MeteoService) {
              
              
             
-             this.loadPeople();
+             this.loadMeteo();
              	
               }
               
@@ -29,11 +29,11 @@ public people: any;
 
               };
 
-                loadPeople(){
+                loadMeteo(){
                   this.meteoService.load()
                   .then(data => {
                     
-                    this.people = data;
+                    this.meteos = data;
                     console.log(data)
                   });
                 }

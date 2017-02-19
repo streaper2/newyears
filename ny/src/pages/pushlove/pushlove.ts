@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { UserProvider } from '../../providers/user-provider';
 
 /*
   Generated class for the Pushlove page.
@@ -13,10 +15,21 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class PushlovePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  pushMessage;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, af: AngularFire) {
+
+     af.database.list('/pushlove').subscribe( x=> {
+        this.pushMessage = x;
+        console.log(this.pushMessage)
+      
+    });
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PushlovePage');
+
+   
   }
 
 }

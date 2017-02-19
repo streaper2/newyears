@@ -15,5 +15,12 @@
 
 
 <ion-content padding>
-  <p> le push love button c'est quoi, juste un petit endroit ou tu pourras venir chercher un peu d'amourde la joie et de la bonne humeur. bon pour l'instant il n'y a rien mais ca va pas tarder a venir.
+  
+<ion-item *ngFor="let p of pushMessage">
+  <h2 >{{ p.titre }}</h2>
+
+  <p>{{ p.message }}</p>
+
+</ion-item>
+
 </ion-content>
